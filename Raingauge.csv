@@ -1,0 +1,16 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C1,C2,C3";"C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2";3;"100n";;;
+2;"C4,C5";"CP_Radial_Tantal_D5.5mm_P5.00mm";2;"22u";;;
+3;"C6";"C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2";1;"10n";;;
+4;"D1";"LED_Rectangular_W5.0mm_H2.0mm";1;"LED_Dual_2pin";;;
+5;"R1";"R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal";1;"33k";;;
+6;"R2,R4";"R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal";2;"1M";;;
+7;"R3";"R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal";1;"2.5M";;;
+8;"R5";"R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal";1;"22k";;;
+9;"R6";"R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal";1;"56";;;
+10;"RV1";"Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm";1;"1M";;;
+11;"U1,U2";"DIP-8_0_ELL";2;"LMC555xN";;;
+12;"U3";"NRF24L01";1;"NRF24L01";;;
+13;"IC1";"pro_mini";1;"ArduinoProMini";;;
+14;"J2";"Molex_KK-6410-03_03x2.54mm_Straight";1;"Battery";;;
+15;"J1";"Molex_KK-6410-02_02x2.54mm_Straight";1;"Bucket";;;
