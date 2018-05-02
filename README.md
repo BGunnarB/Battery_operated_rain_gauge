@@ -4,11 +4,11 @@ This project is for a battery-operated (2 x AA) rain-gauge using the MySensors l
 
 The requirements were that the gauge should report the rainfall during the last 5 to 10 minutes to the controller. Since the node should be asleep most of the time it would not be able to keep track of the time between reports, so some other way of time-keeping should be provided.
 
-Also, the tipping-bucket rain-gauge typically generated contact bounce, which should be filtered out.
+Also, the tipping-bucket rain-gauge typically generated contact bounce, which has to be filtered out.
 
-The solution is an Arduino Pro-Mini 8 MHz, 3.3 V and the NRF24L01+ radio. Timing is provided by a CMOS 555 timer which generates one pulse every minute. Every minute-pulse generates an interrupt. After a pre-set number of minute pulses, the rainfall and battery status are reported. 
+The solution is based on an Arduino Pro-Mini 8 MHz, 3.3 V and the NRF24L01+ radio. Timing is provided by a CMOS 555 timer which generates one pulse every minute. Every minute-pulse generates an interrupt. After a pre-set number of minute pulses, the rainfall and battery status are reported. 
 
-Every time the bucket tips, an interrupt is generated. The rainfall is incremented by the amount that the bucket indicates. The contact bounce is filtered out by another CMOS 555 timer since I had a few of these handy.
+Every time the bucket tips, an interrupt is generated. The rainfall is incremented by the amount that the bucket indicates. The calibration factor is set in the sketch. The contact bounce is filtered out by another CMOS 555 timer since I had a few of these handy rather than messing around with software filtering, which may disrupt the interrupt service routine.
 
 To indicate that the timer generated an interrupt, a LED flashes green. To indicate that the rain-bucket generated an interrupt, the LED flashes red.
 
